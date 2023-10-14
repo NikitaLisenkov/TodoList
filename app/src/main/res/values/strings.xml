@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Todo List</string>
+    <string name="enter_note_hint">Enter note:</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="save">Save</string>
+    <string name="error_fields_empty">Пожалуйста, заполните поле!</string>
+</resources>
