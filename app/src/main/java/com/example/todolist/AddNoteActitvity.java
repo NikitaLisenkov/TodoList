@@ -60,16 +60,8 @@ public class AddNoteActitvity extends AppCompatActivity {
         int priority = getPriority();
         Note note = new Note(text, priority);
         viewModel.saveNote(note);
-
-
-        if (text.isEmpty()) {
-            Toast.makeText(
-                    AddNoteActitvity.this,
-                    R.string.error_fields_empty,
-                    Toast.LENGTH_SHORT
-            ).show();
-        }
     }
+
 
     private int getPriority() {
         int priority;

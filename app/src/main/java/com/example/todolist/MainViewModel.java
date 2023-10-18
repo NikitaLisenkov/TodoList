@@ -11,8 +11,6 @@ import java.util.List;
 public class MainViewModel extends AndroidViewModel {
 
     private NoteDatabase noteDatabase;
-//    private int count = 0;
-//    private MutableLiveData<Integer> countLD = new MutableLiveData<>();
 
 
     public MainViewModel(@NonNull Application application) {
@@ -23,14 +21,6 @@ public class MainViewModel extends AndroidViewModel {
     LiveData<List<Note>> getNotes() {
         return noteDatabase.notesDao().getNotes();
     }
-
-//    public void showCount() {
-//        count++;
-//        countLD.setValue(count);
-//    }
-//    public LiveData<Integer> getCount() {
-//        return countLD;
-//    }
 
     public void remove(Note note) {
         Thread thread = new Thread(new Runnable() {
