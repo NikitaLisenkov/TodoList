@@ -75,6 +75,10 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         return notes.size();
     }
 
+    interface OnNoteClickListener {
+        void onNoteClick(Note note);
+    }
+
     class NotesViewHolder extends RecyclerView.ViewHolder {
         private TextView textViewNote;
 
@@ -82,10 +86,6 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
             super(itemView);
             textViewNote = itemView.findViewById(R.id.textViewNote);
         }
-    }
-
-    interface OnNoteClickListener {
-        void onNoteClick(Note note);
     }
 }
 
